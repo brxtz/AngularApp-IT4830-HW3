@@ -1,0 +1,19 @@
+<div style="display: flex;">
+  <div style="display: flex; width: 100%;">
+    <mat-card>
+      <div style="display: flex;">
+        <textarea matInput [(ngModel)]="newPostText" placeholder="Enter your post here" style="width: auto;"></textarea>
+        <button mat-raised-button color="primary" (click)="submitPost()">Submit</button>
+      </div>
+    </mat-card>
+  </div>
+  <div style="display: flex; width: 100%;">
+    <mat-card>
+      <mat-expansion-panel *ngFor="let post of posts">
+        <mat-expansion-panel-header>
+          {{ post }}
+        </mat-expansion-panel-header>
+      </mat-expansion-panel>
+    </mat-card>
+  </div>
+</div>

@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+mat-card {
+  width: 48%;
+  margin: 10px;
+}
+
+button {
+  width: 50%;
+  margin: 10px auto;
+  display: block;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+mat-card {
+  display: flex;
+}
+
+mat-card:first-child {
+  flex: 1;
+  margin-right: 10px;
+}
+
+mat-card:last-child {
+  flex: 1;
+}
